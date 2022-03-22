@@ -1,2 +1,2 @@
 # VugaCFS
-Website for a Window tinting, an vehicle wrapping service 
+Website for a Window tinting, and vehicle wrapping service 

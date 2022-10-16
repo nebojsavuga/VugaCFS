@@ -25,6 +25,7 @@ galleryRequest.onreadystatechange = function(){
                         // kreiranje i dodavanje optionsa
                         typesSet.add(gallery[work]["Tip"]);
                         let newOption = new Option(gallery[work]["Tip"], gallery[work]["Tip"]);
+                        
                         serviceChoices.add(newOption,undefined);
                 }
             }
@@ -72,8 +73,6 @@ function createGallery(selectedValue, parentElement, listOfTypes, listOfDesc, li
                     currentImage = this;
                     let imagePlaceholer = document.getElementById('imagePlaceholder');
                     imagePlaceholder.setAttribute("src", currentImage.getAttribute('data-imageURL'));
-                    let titlePlaceholder = document.getElementById('titlePlaceholder');
-                    titlePlaceholder.innerText = currentImage.getAttribute('data-imageDescription');
                     contentOverlay.style.display='block';
                     navigation = document.getElementById('navigationBar');
                     navigation.style.display = 'none';

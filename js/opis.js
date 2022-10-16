@@ -9,7 +9,7 @@ requestDesc.onreadystatechange = function(){
             let data = JSON.parse(requestDesc.responseText);
 
             
-            let descText = document.getElementById("opisTekst");
+            let descText = document.getElementById("opis");
             descText.innerHTML = data["opis1"];
 
             let tintDesc = document.getElementById("opisZatamnjivanje");

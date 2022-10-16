@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -16,7 +15,7 @@
 
 <link rel="icon" href="../img/VUGA.png" />
 </head>
-<body>
+<body class="stop-scrolling">
 	<nav class="navigacija" id="navigationBar">
 		<input type="checkbox" name="checkboxResponzivan" id="checkboxResponzivan">
 		<label for="checkboxResponzivan">
@@ -27,25 +26,25 @@
 		
 		<ul class="navLista" id="navigationList">
 			<li><a href="#" class="navItem" onclick="scrollToTop()">Početna</a></li>
-			<li><a href="#naslovONama" class="navItem">O nama</a></li>
-			<li><a href="#pricing" class="navItem" >Cenovnik</a></li>
-			<li><a href="#gallery" class="navItem" >Galerija</a></li>
-			<li><a href="#footer" class="navItem" >Kontakt</a></li>
+			<li><a href="#naslovONama" class="navItem" onclick="removeStopScroll()">O nama</a></li>
+			<li><a href="#pricing" class="navItem" onclick="removeStopScroll()">Cenovnik</a></li>
+			<li><a href="#gallery" class="navItem" onclick="removeStopScroll()">Galerija</a></li>
+			<li><a href="#footer" class="navItem" onclick="removeStopScroll()">Kontakt</a></li>
 		</ul>
 	</nav>
 	<main>
 		<div class="darkSideBottom">
-		<a href="#naslovONama" id="darkSide"><p>Predjite na tamnu stranu</p></a>
+		<a href="#naslovONama" id="darkSide" onclick="removeStopScroll()"><p>Predjite na tamnu stranu</p></a>
 		</div>
 	</main>
 	<div id="about" class="sections">
 		<p class="naslov" id="naslovONama">O NAMA</p>
 		<img src="../img/oNamaSlika.jpg" id="slikaRada" alt="slika o nama"/>
-		<p id="opisTekst" class="opisTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nunc tincidunt erat maximus pulvinar ut a libero. Fusce volutpat odio leo. Nullam nec felis viverra, convallis felis at, rutrum mi. Maecenas id libero dolor. Donec aliquam tincidunt ex porttitor efficitur. Sed finibus dapibus augue mattis consectetur. Suspendisse efficitur, ligula vitae consequat rhoncus, nibh nunc lobortis massa, a pellentesque sapien odio ac mauris. Etiam tempor ultrices nulla luctus rutrum. Vivamus molestie nulla non ultrices dictum. Ut eu dignissim ex. Duis a nulla pharetra, venenatis odio convallis, feugiat nisi. Etiam ac ornare odio, sed commodo ex.</p>
+		<p id="opis" class="opisTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nunc tincidunt erat maximus pulvinar ut a libero. Fusce volutpat odio leo. Nullam nec felis viverra, convallis felis at, rutrum mi. Maecenas id libero dolor. Donec aliquam tincidunt ex porttitor efficitur. Sed finibus dapibus augue mattis consectetur. Suspendisse efficitur, ligula vitae consequat rhoncus, nibh nunc lobortis massa, a pellentesque sapien odio ac mauris. Etiam tempor ultrices nulla luctus rutrum. Vivamus molestie nulla non ultrices dictum. Ut eu dignissim ex. Duis a nulla pharetra, venenatis odio convallis, feugiat nisi. Etiam ac ornare odio, sed commodo ex.</p>
 		<div class="aboutWork">
 			<div class="workSection">
 				<p class="naslov">Zatamnjivanje stakala</p>
-				<img src="../img/porsche.jpg" class="slikaOpisa" alt="slika zatamnjivanje"/>
+				<img src="../img/lepPors.jpg" class="slikaOpisa" alt="slika zatamnjivanje"/>
 				<p class="opisTekst" id="opisZatamnjivanje">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nunc tincidunt erat maximus pulvinar ut a libero. Fusce volutpat odio leo. Nullam nec felis viverra, convallis felis at, rutrum mi. Maecenas id libero dolor. Donec aliquam tincidunt ex porttitor efficitur. Sed finibus dapibus augue mattis consectetur. Suspendisse efficitur, ligula vitae consequat rhoncus, nibh nunc lobortis massa, a pellentesque sapien odio ac mauris. Etiam tempor ultrices nulla luctus rutrum. Vivamus molestie nulla non ultrices dictum. Ut eu dignissim ex. Duis a nulla pharetra, venenatis odio convallis, feugiat nisi. Etiam ac ornare odio, sed commodo ex. </p>
 			</div>
 			<div class="workSection">
@@ -54,8 +53,8 @@
 				<p class="opisTekst" id="opisPresvlacenje">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nunc tincidunt erat maximus pulvinar ut a libero. Fusce volutpat odio leo. Nullam nec felis viverra, convallis felis at, rutrum mi. Maecenas id libero dolor. Donec aliquam tincidunt ex porttitor efficitur. Sed finibus dapibus augue mattis consectetur. Suspendisse efficitur, ligula vitae consequat rhoncus, nibh nunc lobortis massa, a pellentesque sapien odio ac mauris. Etiam tempor ultrices nulla luctus rutrum. Vivamus molestie nulla non ultrices dictum. Ut eu dignissim ex. Duis a nulla pharetra, venenatis odio convallis, feugiat nisi. Etiam ac ornare odio, sed commodo ex. </p>
 			</div>
 			<div class="workSection">
-				<p class="naslov">Ugradnja multimedije i ozvučenja</p>
-				<img src="../img/multimedija.jpg" class="slikaOpisa" alt="slika multimedije"/>
+				<p class="naslov">Ostale Usluge</p>
+				<img src="../img/multimedijaV.jpg" class="slikaOpisa" alt="slika multimedije"/>
 				<p class="opisTekst" id="opisUgradnja">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in nunc tincidunt erat maximus pulvinar ut a libero. Fusce volutpat odio leo. Nullam nec felis viverra, convallis felis at, rutrum mi. Maecenas id libero dolor. Donec aliquam tincidunt ex porttitor efficitur. Sed finibus dapibus augue mattis consectetur. Suspendisse efficitur, ligula vitae consequat rhoncus, nibh nunc lobortis massa, a pellentesque sapien odio ac mauris. Etiam tempor ultrices nulla luctus rutrum. Vivamus molestie nulla non ultrices dictum. Ut eu dignissim ex. Duis a nulla pharetra, venenatis odio convallis, feugiat nisi. Etiam ac ornare odio, sed commodo ex. </p>
 			</div>
 		</div>
@@ -89,16 +88,11 @@
 		</div>
 	</div>
 	<div id="contentOverlay">
-		<div id="leftArrow" class="arrows">
-			&lt;
-		</div><!-- leftArrow -->
+		
 		<div id="imgDivOverlay">
 			<img id="imagePlaceholder" src="" title="" />
-			<p id="titlePlaceholder"></p>
 		</div><!-- imgDiv -->
-		<div id="rightArrow" class="arrows">
-			&gt;
-		</div><!-- rightArrow -->
+
 	</div>
 
 	<footer id="footer">
@@ -171,7 +165,11 @@
 			}
 		
 	});
-
+	window.onbeforeunload = function () {
+		history.scrollRestoration = "manual";
+		window.scrollTo(0, 0);
+		document.querySelector('html').style.scrollBehavior = '';
+	}
 	window.onscroll = function() {myFunction()};
 
 	var navbar = document.getElementById("navigationBar");
@@ -183,13 +181,15 @@
 		
 	} else {
 		navbar.classList.remove("sticky");
-	
 	}
 	}
 	function scrollToTop() {
             window.scrollTo(0, 0);
+			
     }
-
+	function removeStopScroll(){
+		document.body.classList.remove('stop-scrolling');
+	}
 </script>
 <script src="../js/main.js"></script>
 <script src="../js/opis.js"></script>

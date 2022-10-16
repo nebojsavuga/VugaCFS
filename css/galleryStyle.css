@@ -93,35 +93,20 @@ select option{
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
-}
-.arrows{
-    width: 8%;
-    height: 7vw;
-    font-size: 66px;
-    color: rgba(255, 255, 255, 0.4);
     text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-    -webkit-user-select: none;        
-	-moz-user-select: none;
-	-ms-user-select: none;
-	float: left;
-	margin-top: 10%;
-    transition: .4s ease-out;
 }
-.arrows:hover{
-    color: white;
-    transition: .4s ease-in;
-}
+
 #imgDivOverlay{
-    width: 80%;
-    height: 90%;
-    float: left;
+    position: absolute;
+    width: 90%;
+    height: 96%;
     padding: 2%;
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #imgDivOverlay img{
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit: contain;
 
@@ -141,9 +126,5 @@ select option{
         width: 100%;
         
     }
-    .arrows{
-        margin-top: 20%;
-    }
-    
 
 }
